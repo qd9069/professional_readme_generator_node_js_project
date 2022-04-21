@@ -1,8 +1,8 @@
 // Add code to generate markdown for README given a data object parameter containing the user input.
-function generateMarkdown(data) {
+function generateMarkdown(data, license) {
   return `# ${data.title}
 
-  ![badge for selected license](https://img.shields.io/badge/license-${data.license}-9cf)
+  ![badge for selected license](https://img.shields.io/badge/license-${license}-9cf)
 
   ## Description
   
@@ -63,16 +63,4 @@ module.exports = generateMarkdown;
 // 9. Questions: display Github username, with a link to the Github profile
   // display email address, with instructions on how to reach me with additional questions
 
-
-
-
- 
-  
-  
-  
-
-  
-  
-  
- 
   

@@ -41,14 +41,15 @@ const init = () => {
             message: 'Please choose a license for your project.',
             name: 'license',
             choices: ['Apache License 2.0', 
-                        'GNU General Public License v3.0', 
-                        'MIT License',
-                        'Boost Software License 1.0',
-                        'GNU Affero General Public License v3.0',
-                        'GNU General Public License v2.0',
-                        'GNU Lesser General Public License v2.1',
-                        'Mozilla Public License 2.0',
-                        'The Unlicense'],
+                    'Academic Free License v3.0',
+                    'MIT License',
+                    'Boost Software License 1.0',
+                    'GNU Affero General Public License v3.0',
+                    'GNU General Public License v2.0',
+                    'GNU General Public License v3.0',
+                    'GNU Lesser General Public License v2.1',
+                    'Mozilla Public License 2.0',
+                    'The Unlicense'],
             },
             // 6. enter contribution guidelines
             {
@@ -75,9 +76,13 @@ const init = () => {
             },
         ])
         .then((data) => {
-            console.log(data);
+            // console.log(data);
 
-            const readmePageContent = generateMarkdown(data);
+            // to replace all spaces with %20 for the license badge
+            const license = data.license.replace(/\s+/g, '%20');
+            // console.log(license);
+
+            const readmePageContent = generateMarkdown(data,license);
 
             // Step2: write all user responses in the README file
             fs.writeFile('exampleREADME.md', readmePageContent, (err) =>
