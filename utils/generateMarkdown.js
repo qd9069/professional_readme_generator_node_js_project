@@ -2,6 +2,61 @@
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ## Description
+  
+  ${data.description}
+  
+  ## Table of Contents
+  
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+
+  ## Installation
+
+  ```md
+  ${data.installation}
+  ```
+
+  ## Usage
+  
+  ```md
+  ${data.usage}
+  ```
+
+  ## License
+  
+  This project is licensed under the terms of the ${data.license}.
+  
+  // ## Badges
+  
+  // ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+  
+  // Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+  
+  
+  ## Contributing
+  
+  ```md
+  ${data.contribution}
+  ```
+
+  ## Tests
+  
+  ```md
+  ${data.tests}
+  ```
+
+  ## Questions
+
+  Here is my Github username: ${data.username} and Github profile: [https://github.com/${data.username}](https://github.com/${data.username})
+
+  Please feel free to send me an email at ${data.email} if you have additional questions.
+  
 `;
 }
 
@@ -21,3 +76,17 @@ module.exports = generateMarkdown;
 // 8. Tests
 // 9. Questions: display Github username, with a link to the Github profile
   // display email address, with instructions on how to reach me with additional questions
+
+
+
+
+ 
+  
+  
+  
+
+  
+  
+  
+ 
+  
