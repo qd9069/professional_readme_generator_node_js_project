@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 
-// TODO: import the generateMarkdown function from utils/generateMarkdown.js
+// Import the generateMarkdown function from utils/generateMarkdown.js
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Write code to get user input, generate markdown, and save it to a file.
+// Write code to get user input, generate markdown, and save it to a file.
 const inquirer = require('inquirer');
 const fs = require('fs');
 
@@ -79,16 +79,13 @@ const init = () => {
 
             const readmePageContent = generateMarkdown(data);
 
-            // fs.writeFile('index.html', htmlPageContent, (err) =>
-            //     err ? console.log(err) : console.log('Successfully created index.html!')
-            // );
+            // Step2: write all user responses in the README file
+            fs.writeFile('exampleREADME.md', readmePageContent, (err) =>
+                err ? console.log(err) : console.log('Successfully created README.md!')
+            );
 
         });
 
 }
 
 init();
-
-// Step2: to generate the table of contents
-
-// Step3: print all the user responses in the README file

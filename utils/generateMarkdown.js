@@ -1,4 +1,4 @@
-// TODO: Add code to generate markdown for README given a data object parameter containing the user input.
+// Add code to generate markdown for README given a data object parameter containing the user input.
 function generateMarkdown(data) {
   return `# ${data.title}
 
@@ -18,15 +18,15 @@ function generateMarkdown(data) {
 
   ## Installation
 
-  ```md
+  
   ${data.installation}
-  ```
+  
 
   ## Usage
   
-  ```md
+ 
   ${data.usage}
-  ```
+  
 
   ## License
   
@@ -41,15 +41,15 @@ function generateMarkdown(data) {
   
   ## Contributing
   
-  ```md
+  
   ${data.contribution}
-  ```
+  
 
   ## Tests
   
-  ```md
+  
   ${data.tests}
-  ```
+  
 
   ## Questions
 
