@@ -2,6 +2,8 @@
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ![badge for selected license](https://img.shields.io/badge/license-${data.license}-9cf)
+
   ## Description
   
   ${data.description}
@@ -18,45 +20,29 @@ function generateMarkdown(data) {
 
   ## Installation
 
-  
   ${data.installation}
   
-
   ## Usage
   
- 
   ${data.usage}
   
-
   ## License
   
   This project is licensed under the terms of the ${data.license}.
   
-  // ## Badges
-  
-  // ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-  
-  // Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-  
-  
   ## Contributing
-  
   
   ${data.contribution}
   
-
   ## Tests
-  
   
   ${data.tests}
   
-
   ## Questions
 
   Here is my Github username: ${data.username} and Github profile: [https://github.com/${data.username}](https://github.com/${data.username})
 
   Please feel free to send me an email at ${data.email} if you have additional questions.
-  
 `;
 }
 
