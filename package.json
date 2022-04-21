@@ -10,5 +10,15 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "^6.3.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qd9069/professional_readme_generator_node_js_project.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/qd9069/professional_readme_generator_node_js_project/issues"
+  },
+  "homepage": "https://github.com/qd9069/professional_readme_generator_node_js_project#readme"
 }
