@@ -82,10 +82,16 @@ const init = () => {
             const license = data.license.replace(/\s+/g, '%20');
             // console.log(license);
 
-            const readmePageContent = generateMarkdown(data,license);
+            // to capitalize the first letter of each word in title
+            const title = data.title.split(" ").map((word) => { 
+                return word[0].toUpperCase() + word.substring(1); 
+            }).join(" ");
+            // console.log(title);
+
+            const readmePageContent = generateMarkdown(data, license, title);
 
             // Step2: write all user responses in the README file
-            fs.writeFile('exampleREADME.md', readmePageContent, (err) =>
+            fs.writeFile('sampleREADME.md', readmePageContent, (err) =>
                 err ? console.log(err) : console.log('Successfully created README.md!')
             );
 
